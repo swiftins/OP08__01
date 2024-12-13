@@ -70,7 +70,8 @@ root.title("ПЛАН")
 root.configure(background="khaki3")
 
 # Загрузка изображения
-img_path = r"C:\\Users\\АСУС\\Desktop\\top-view-january-calendar-plant_23-2149204277.jpg"
+#img_path = r"C:\\Users\\АСУС\\Desktop\\top-view-january-calendar-plant_23-2149204277.jpg"
+img_path = "image.jpg"
 
 
 image = Image.open(img_path)
