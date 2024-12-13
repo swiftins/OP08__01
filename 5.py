@@ -35,7 +35,16 @@ def mark_task_important():
         if not current_task.endswith("!!!!"):
             tasks_listBox.delete(selected_task_index)
             tasks_listBox.insert(selected_task_index, f"{current_task} !!!!")
+            play_sound()  # Воспроизведение звука
 
+#def remove_important_mark():
+#    selected_task_index = tasks_listBox.curselection()
+#    if selected_task_index:
+#        current_task = tasks_listBox.get(selected_task_index)
+#       if current_task.endswith("!!!!"):
+#           current_task = current_task[:-4]
+#           tasks_listBox.delete(selected_task_index)
+#           tasks_listBox.insert(selected_task_index, current_task)
 def remove_important_mark():
     selected_task_index = tasks_listBox.curselection()
     if selected_task_index:
@@ -44,6 +53,14 @@ def remove_important_mark():
             current_task = current_task[:-4]
             tasks_listBox.delete(selected_task_index)
             tasks_listBox.insert(selected_task_index, current_task)
+            play_sound()  # Воспроизведение звука
+
+
+
+
+
+
+
 
 root = tk.Tk()
 root.title("ПЛАН")
